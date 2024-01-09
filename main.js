@@ -17,9 +17,8 @@ form.addEventListener("submit", function(e) {
     const expMonth = getValue('input[type="text"][placeholder="january"]');
     const expYear = getValue('input[type="number"]');
     const cvv = getValue('input[type="text"][placeholder="1234"]');
-    const year = getValue('input[type="number" placeholder="2022"]');
 
-    const requiredFields = [fullName, email, address, city, state, zipCode, nameOnCard, creditCardNumber, expMonth, expYear, cvv, year];
+    const requiredFields = [fullName, email, address, city, state, zipCode, nameOnCard, creditCardNumber, expMonth, expYear, cvv];
 
     if (requiredFields.some(field => field === "")) {
         notification.textContent = "Please enter all required fields";
